@@ -77,20 +77,18 @@ const TaskManagerView = React.createClass({
           Coins left: {this.props.userCoins}
         </Text>
 
-        <View style={styles.detailSeperator} />
-
-          <View style={styles.rowButtonSection}>
-            <TouchableOpacity style={styles.rowButton}>
-              <Text style={styles.rowButtonText}>
-                Assigned Tasks
-              </Text>
-            </TouchableOpacity>
-            <TouchableOpacity style={styles.rowButton}>
-              <Text style={styles.rowButtonText}>
-                Requested Tasks
-              </Text>
-            </TouchableOpacity>
-          </View>
+        <View style={styles.rowButtonSection}>
+          <TouchableOpacity style={styles.rowButtonSelected}>
+            <Text style={styles.rowButtonText}>
+              Assigned Tasks
+            </Text>
+          </TouchableOpacity>
+          <TouchableOpacity style={styles.rowButton}>
+            <Text style={styles.rowButtonText}>
+              Requested Tasks
+            </Text>
+          </TouchableOpacity>
+        </View>
 
         <ListView
           dataSource={this.state.dataSource}
