@@ -90,7 +90,8 @@ const styles = {
     color: colors.white
   },
   coinText: {
-    fontSize: 20
+    fontSize: 20,
+    marginBottom: 10
   },
   loading: {
     flex: 1,
@@ -151,13 +152,16 @@ const styles = {
     marginRight: 25
   },
   rowButton: {
-    backgroundColor: colors.accent,
+    backgroundColor: colors.primaryColor,
     padding: 10,
-    borderRadius: 5,
-    margin: 10,
-    shadowColor: colors.black,
-    shadowOpacity: .5,
-    shadowOffset: {height: 5}
+    paddingLeft: 38,
+    paddingRight: 38
+  },
+  rowButtonSelected: {
+    backgroundColor: colors.darkPrimaryColor,
+    padding: 10,
+    paddingLeft: 38,
+    paddingRight: 38
   },
   rowButtonText: {
     fontSize: 15,
@@ -166,9 +170,9 @@ const styles = {
     color: colors.white
   },
   rowButtonSection: {
+    backgroundColor: colors.primaryColor,
     flexDirection: 'row',
-    justifyContent: 'flex-start',
-    backgroundColor: colors.white
+    justifyContent: 'center'
   }
 };
 
