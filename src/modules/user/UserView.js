@@ -10,6 +10,7 @@ import {
   ScrollView
 } from 'react-native';
 import colors from '../../styles/colors';
+import stars from '../../styles/stars';
 
 const UserView = React.createClass({
   propTypes: {
@@ -56,7 +57,10 @@ const UserView = React.createClass({
           />
         </View>
 
-        <Text style={styles.ratingText}>Rating: {this.props.rating}</Text>
+        <Image
+          source={stars[(Math.round(this.props.rating * 2) / 2).toFixed(1)]}
+          style={{height: 25, width: 125, margin: 15}}
+        />
 
         <View style={styles.detailSeperator}/>
 
